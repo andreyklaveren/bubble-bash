@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 144rem;
+    background-color: $primaryBackgroundColor;
+    z-index: 1;
+    // Mixin para pagina respeitar o padrao das medidas
+    @include  defaultContainer;
+}
+header::after {
+    content: '';
+    background-image: url("../../assets/images/sombraBG.svg");
+    background-size: cover;
+    z-index: 999;
+}
+.headerContent {
+    text-align: center;
+    padding: 10rem 10.6rem 34.3rem;
+    .headerTitle {
+        font-size: 6.4rem;
+        font-weight: bold;
+        margin-bottom: 3.2rem;
+    }
+    .headerDescription {
+        font-size: 1.8rem;
+        margin-bottom: 4.8rem;
+        font-weight: 200;
+        line-height: 2.7rem;
+    }
+    @include defaultButton 
+}
+//Imagem principal da pagina
+.meetingImg {
+    margin: -276px auto;
+    display: block;
+}

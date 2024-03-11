@@ -1,0 +1,14 @@
+//Zera o css padrão do browser
+* { 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    color: $defaultTextColor;
+  }
+  
+  :root {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 62.5%; //Transforma 1rem em 10px
+  }

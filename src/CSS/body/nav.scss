@@ -1,0 +1,41 @@
+// Estilos para barra de navegação
+.navigation {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 144rem;
+    background-color: $primaryBackgroundColor;
+    // Default container config
+      @include  defaultContainer;
+      // Todos conteudos barra de navegação
+      .navigationContent {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.9rem 0;
+        //Config logo e text da logo
+        .logoAndText{
+          display: flex;
+          align-items: center;
+          gap: 0.8rem;
+          //Texto ao lado da logo
+          h2 { 
+            font-weight: 600;
+            font-size: 2rem;
+          }
+        }
+        // Barra de links
+        .navigationLinks {
+          display: flex;
+          gap: 4rem;
+          // Links
+          a {
+            font-size: 2rem;
+          }
+          a:hover {
+            transition: 300ms;
+            color: #54c08c;
+            text-shadow: 1px 1px 8px rgb(80, 80, 80);
+          }
+        }
+      }
+  }
